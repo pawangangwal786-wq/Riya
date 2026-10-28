@@ -1,17 +1,15 @@
-# Riya AI (Android starter)
+# Riya AI — Android starter project
 
-A small Android starter app for a virtual companion chat UI. It currently runs in **demo mode** with sample responses; it does not yet connect to a real AI service.
+A simple Android virtual companion chat UI. This starter uses local demo replies and does not yet connect to a real AI model.
 
-## Build an APK from your phone using GitHub
+## Build APK using GitHub on your phone
+1. Extract this ZIP on your phone.
+2. Upload the **contents** of this folder to the root of your GitHub repository, preserving all folders (especially `app/` and `.github/workflows/`). Do not upload only the ZIP.
+3. Commit the files to the `main` branch.
+4. Open the repository's **Actions** tab. Choose **Build Riya AI APK** and tap **Run workflow** if it has not started automatically.
+5. When the run completes successfully, open it and download the `Riya-AI-debug-apk` artifact ZIP.
+6. Extract that ZIP to get `app-debug.apk`.
 
-1. Upload all files/folders from this ZIP to your empty `Riya-AI` GitHub repository, keeping the folder structure.
-2. Commit the files to the `main` branch.
-3. Open the repository's **Actions** tab.
-4. Select **Build Riya AI APK** and tap **Run workflow** (or wait for the push workflow).
-5. Open the completed workflow run and download the `Riya-AI-debug-apk` artifact.
-6. Extract the downloaded artifact ZIP to get `app-debug.apk`. Android may ask you to allow installing apps from your browser/files app.
-
-## Important
-- This is a starter APK project, not a complete production AI companion.
-- The chat replies are simple local demo replies. Real AI requires a backend service and an API key stored securely on that backend. Do not put a private AI API key directly into an APK or public GitHub repository.
-- Before public release, add privacy disclosures, secure backend integration, testing, and an appropriate app signing/release process.
+## Notes
+- GitHub Actions installs Gradle 8.9 and Java 17; a Gradle wrapper JAR is not required for this workflow.
+- This is a starter project, not a complete production AI girlfriend app. Replies are local demo responses. Real AI requires a secure backend; never put a private AI API key in the APK or public repository.
